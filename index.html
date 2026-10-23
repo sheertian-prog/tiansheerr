@@ -103,6 +103,15 @@
     footer{display:flex;justify-content:space-between;gap:16px;padding:23px 0 30px;color:var(--muted);font-size:10px}
     .small-links{display:flex;gap:16px}
     .small-links a:hover{color:var(--green)}
+
+    .project-media{height:300px;background:var(--paper2);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+    .project-media a{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+    .project-media img{display:block;width:100%;height:100%;object-fit:contain}
+    .project-media video{display:block;width:100%;height:100%;object-fit:contain;background:#152528}
+    .project-media.dual{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px;height:300px}
+    .project-media.dual a{min-width:0;background:var(--white);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+    .project-media.dual img{object-fit:contain}
+
     @media(max-width:760px){
       .wrap{width:min(100% - 30px,600px)}
       .nav{padding:16px 0}.navlinks{gap:13px;font-size:11px}.navlinks a:nth-child(2){display:none}
@@ -113,7 +122,7 @@
       section{padding-bottom:65px}.section-head{display:block}.section-desc{margin-top:13px}
       .about-grid,.portfolio-grid{grid-template-columns:1fr}
       .timeline-item{grid-template-columns:1fr;gap:5px;padding:17px 0}
-      .project-visual{height:165px}
+      .project-visual{height:165px}.project-media{height:250px}.project-media.dual{height:230px}
       .contact{grid-template-columns:1fr;align-items:start}.contact .btn{justify-self:start}
       footer{flex-direction:column}
     }
@@ -240,37 +249,35 @@
         </article>
 
         <article class="project">
-          <div class="project-visual visual-blue"><span class="visual-label">CONTENT OPERATIONS</span><div class="visual-title">从用户关心的问题<br>找到内容切口</div><span class="visual-mark">↗</span></div>
+          <div class="project-media">
+            <a href="xhs-rental-case.jpg" target="_blank" rel="noopener noreferrer"><img src="xhs-rental-case.jpg" alt="已脱敏的小红书房源推广笔记截图"></a>
+          </div>
           <div class="project-body">
-            <div class="project-meta"><span class="pill">内容案例</span><span class="pill">选题表达</span><span class="pill">互动反馈</span></div>
-            <h3>小红书内容运营案例</h3>
-            <p>围绕消费决策、学习与生活选择等话题制作内容。代表作品“618 要不要换 17 Pro”获得 6.1 万+浏览、453 赞、155 收藏与 736 条评论，可用于复盘选题吸引力和用户讨论。</p>
-            <div class="metric-row">
-              <div class="metric"><strong>6.1万+</strong><span>浏览量</span></div>
-              <div class="metric"><strong>736</strong><span>评论</span></div>
-              <div class="metric"><strong>608</strong><span>点赞与收藏</span></div>
-            </div>
-            <div class="project-foot" style="margin-top:16px"><a href="https://xhslink.com/m/6SkrfOnMPNp" target="_blank" rel="noopener noreferrer">查看小红书主页 ↗</a><span>03</span></div>
+            <div class="project-meta"><span class="pill">小红书</span><span class="pill">房源推广</span><span class="pill">信息组织</span></div>
+            <h3>小红书房源推广案例</h3>
+            <p>围绕房源位置、租金与物业费、房间配置、租期和续租方式整理笔记，突出用户决策所需信息，并设置私信咨询入口。以下互动为截图记录时的数据。</p>
+            <div class="metric-row"><div class="metric"><strong>4</strong><span>点赞</span></div><div class="metric"><strong>3</strong><span>收藏</span></div><div class="metric"><strong>7</strong><span>评论</span></div><div class="metric"><strong>2</strong><span>分享</span></div></div>
+            <div class="project-foot" style="margin-top:16px"><span>实际发布内容 · 地址已脱敏</span><span>03</span></div>
           </div>
         </article>
 
         <article class="project">
-          <div class="project-visual visual-dark"><span class="visual-label">AIGC VIDEO</span><div class="visual-title">选题 → 脚本 → 分镜<br>→ 生成 → 剪辑</div><span class="visual-mark">▶</span></div>
+          <div class="project-media"><video controls preload="metadata" poster="ad-edit-cover.jpg" aria-label="广告视频剪辑作品"><source src="ad-edit.mp4" type="video/mp4">当前浏览器暂不支持视频播放。</video></div>
           <div class="project-body">
-            <div class="project-meta"><span class="pill">视频制作练习</span><span class="pill">AIGC</span><span class="pill">工作流</span></div>
-            <h3>AI 短视频制作流程探索</h3>
-            <p>梳理从选题、脚本、分镜、AI 素材生成到剪辑整合的制作流程，并关注素材一致性、可控性、修改成本与模板复用。具体成片与工具信息可后续补充。</p>
-            <div class="project-foot"><span>流程实践 · 成片链接待补充</span><span>04</span></div>
+            <div class="project-meta"><span class="pill">广告剪辑</span><span class="pill">视频内容</span><span class="pill">成片展示</span></div>
+            <h3>广告视频剪辑作品</h3>
+            <p>展示实际广告剪辑成片。后续可补充项目背景、目标受众、使用工具及本人具体负责的剪辑环节，进一步说明从素材到成片的工作过程。</p>
+            <div class="project-foot"><span>实际视频 · 可直接播放</span><span>04</span></div>
           </div>
         </article>
 
         <article class="project">
-          <div class="project-visual visual-yellow"><span class="visual-label">VISUAL DESIGN</span><div class="visual-title">“共徜声乐，<br>与钧和弦”</div><span class="visual-mark">♫</span></div>
+          <div class="project-media"><a href="campus-poster.jpg" target="_blank" rel="noopener noreferrer"><img src="campus-poster.jpg" alt="杭州师范大学沈钧儒法学院歌手比赛海报：共徜声乐，与钧和弦"></a></div>
           <div class="project-body">
             <div class="project-meta"><span class="pill">校园视觉设计</span><span class="pill">海报 / 排版</span></div>
             <h3>校园歌手比赛视觉设计</h3>
-            <p>围绕“共徜声乐，与钧和弦”主题进行视觉呈现探索，涉及海报设计、图像合成、版式与音乐播放器 / 社交媒体 UI 元素。可进一步补充原始海报与设计过程。</p>
-            <div class="project-foot"><span>视觉作品 · 图片待补充</span><span>05</span></div>
+            <p>以“共徜声乐，与钧和弦”为主题，整合活动信息、音乐元素与复古唱片视觉，呈现校园活动宣传物料。点击图片可查看原图。</p>
+            <div class="project-foot"><span>实际海报作品 · 点击查看原图</span><span>05</span></div>
           </div>
         </article>
 
@@ -284,7 +291,38 @@
           </div>
         </article>
       </div>
-      <p class="notice">作品集说明：当前页面中的彩色封面为网站设计的项目分类视觉，不是原项目截图。AI 网页项目尚未补充公开演示链接；后续可替换为真实截图、视频或项目地址。</p>
+
+        <article class="project">
+          <div class="project-media dual">
+            <a href="overseas-90day-data.jpg" target="_blank" rel="noopener noreferrer"><img src="overseas-90day-data.jpg" alt="平台近90天受众数据截图"></a>
+            <a href="overseas-7day-data.jpg" target="_blank" rel="noopener noreferrer"><img src="overseas-7day-data.jpg" alt="平台近7天账号数据截图"></a>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span class="pill">平台运营</span><span class="pill">数据观察</span><span class="pill">受众分析</span></div>
+            <h3>平台运营数据记录</h3>
+            <p>根据两组后台截图整理账号表现，关注浏览、互动、粉丝增长、主页访问与受众地区。因截图未明确显示平台名称，两组数据按各自统计周期分别呈现，不直接合并。</p>
+            <div class="metric-row">
+              <div class="metric"><strong>378.82K</strong><span>截图A · 近90天浏览人数</span></div>
+              <div class="metric"><strong>460.2%</strong><span>截图A · 较上一周期增长</span></div>
+              <div class="metric"><strong>725</strong><span>截图B · 近7日观看</span></div>
+              <div class="metric"><strong>20</strong><span>截图B · 互动数</span></div>
+              <div class="metric"><strong>2</strong><span>截图B · 新增粉丝</span></div>
+              <div class="metric"><strong>55</strong><span>截图B · 主页访客</span></div>
+            </div>
+            <div class="project-foot" style="margin-top:16px"><span>平台后台截图 · 周期分别标注</span><span>07</span></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-media"><a href="toy-visual.jpg" target="_blank" rel="noopener noreferrer"><img src="toy-visual.jpg" alt="潮玩产品、星空背景与倒影构成的视觉作品"></a></div>
+          <div class="project-body">
+            <div class="project-meta"><span class="pill">视觉创作</span><span class="pill">潮玩内容</span><span class="pill">社交媒体素材</span></div>
+            <h3>潮玩主题视觉创作</h3>
+            <p>以潮玩产品为主体，结合星空背景、倒影、装饰图形与文字排版进行画面呈现，展示产品内容的视觉包装与社交平台素材制作实践。</p>
+            <div class="project-foot"><span>实际视觉作品 · 点击查看原图</span><span>08</span></div>
+          </div>
+        </article>
+
+      <p class="notice">作品集说明：海报、平台数据截图、房源笔记及广告视频为实际素材；房源截图中的具体地址已脱敏。两组平台数据的名称与统计口径尚未确认，按原截图分别展示。AI 解谜游戏与论坛体写作网站暂未补充公开演示链接。</p>
     </section>
 
     <section id="contact">
@@ -292,9 +330,9 @@
         <div>
           <div class="kicker">04 / Contact</div>
           <h2>有具体的问题，<br>就从一次沟通开始。</h2>
-          <p>欢迎交流 AI 工具、内容运营、项目协同与创意落地相关机会。可根据岗位方向提供更匹配的简历与作品说明。</p>
+          <p>欢迎交流 AI 工具、内容运营、项目协同与创意落地相关机会。联系方式可在确认后补充，避免公开未经核实的信息。</p>
         </div>
-        <a class="btn" href="mailto:tiansherr@163.com">邮件联系 ↗</a>
+        <span class="btn" style="cursor:default">联系方式待补充</span>
       </div>
     </section>
   </main>
